@@ -42,6 +42,18 @@ def delete_order(request, pk):
     order_instance.delete()
     return render(request,'order.html')  # Replace 'order_list' with the name of your list view
 
+def update_order(request, pk):
+    order_detail = Orderplace.objects.get(pk = pk)
+    print(order_detail)
+    return render(request,'update.html',{'order_detail':order_detail})
+
+
+def update_profile(request, pk):
+    pass
+
+    
+
+
     
 
 

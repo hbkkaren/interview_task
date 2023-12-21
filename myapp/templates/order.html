@@ -28,6 +28,7 @@
         <td>{{i.admin.fullName}}</td>
         <td>{{i.product.productCompany}}</td>
         <td><a href="{% url 'delete_order' pk=i.pk %}">delete</a> </td>
+        <td><a href="{% url 'update_order' pk=i.pk %}">Update</a> </td>
       </tr> 
     {% endfor %}   
 
